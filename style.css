@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #020617;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e5e7eb;
+  overflow: hidden;
+}
+
+/* Decorative shapes */
+.square,
+.circle {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.25;
+}
+
+.square {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  top: 40px;
+  left: 40px;
+  border-radius: 20px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #38bdf8, #1e40af);
+  bottom: 60px;
+  right: 60px;
+  border-radius: 50%;
+}
+
+.weather-container {
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 16px;
+  width: 340px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: 600;
+}
+
+.location-btn {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.weather-info img {
+  width: 70px;
+}
+
+.weather-info p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.hint {
+  opacity: 0.6;
+}
